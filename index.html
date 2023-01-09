@@ -5,65 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Page - Dashboard Admin Template</title>
-    <!--
-
-    Template 2108 Dashboard
-
-	http://www.tooplate.com/view/2108-dashboard
-
-    -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <!-- https://fonts.google.com/specimen/Open+Sans -->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="css/tooplate.css">
+    <title>TienTonEcole</title>
+    <link rel="stylesheet" href="testcsslogin.css">
 </head>
-
-<body class="bg03">
-    <div class="container">
-        <div class="row tm-mt-big">
-            <div class="col-12 mx-auto tm-login-col">
-                <div class="bg-white tm-block">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon text-center"></i>
-                            <h2 class="tm-block-title mt-3">Ecole Direct</h2>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-12">
-                            <form action="index.html" method="post" class="tm-login-form">
-                                <div class="input-group">
-                                    <label for="username" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Username</label>
-                                    <input name="username" type="text" class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" id="username" value="" required>
-                                </div>
-                                <div class="input-group mt-3">
-                                    <label for="password" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Password</label>
-                                    <input name="password" type="password" class="form-control validate" id="password" value="" required>
-                                </div>
-                                <div class="input-group mt-3">
-                                    <button type="button" onclick="login()">S'enregistrer</button>
-                                </div>
-                                <div id="message" class="input-group mt-3" style="display:none;color:red">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <div class="page">
+        <div class="container">
+          <div class="left">
+            <div class="login">Login</div>
+            <div class="eula">Veuillez vous connecter via vos codes Ecole Direct afin d'obtenir les services de TienTonEcole</div>
+          </div>
+          <div class="right">
+            <svg viewBox="0 0 320 300">
+              <defs>
+                <linearGradient inkscape:collect="always" id="linearGradient" x1="13" y1="193.49992" x2="307" y2="193.49992" gradientUnits="userSpaceOnUse">
+                  <stop style="stop-color:#ff00ff;" offset="0" id="stop876" />
+                  <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
+                </linearGradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+            </svg>
+            <div class="form">
+              <label for="username">Username</label>
+              <input type="username" id="username">
+              <label for="password">Password</label>
+              <input type="password" id="password">
+              <input type="submit" id="submit" value="Submit">
+              <div id="message" class="input-group mt-3" style="display:none;color:rgb(0, 0, 0)" value=" "></div>
             </div>
+          </div>
         </div>
-        <footer class="row tm-mt-big">
-            <div class="col-12 font-weight-light text-center">
-                <p class="d-inline-block tm-bg-black text-white py-2 px-4">
-                    Copyright &copy; 2023 TienTonEcole . Created by T-10
-                </p>
-            </div>
-        </footer>
-    </div>
-    <script src="app.js"></script>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+      <script src="testjslogin.js"></script>
 </body>
 
 </html>
