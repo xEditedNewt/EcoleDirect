@@ -23,7 +23,7 @@ async function login() {
         else{
             localStorage.setItem("username", username);
             localStorage.setItem("password", password);
-            window.location.href = "index.html";
+            window.location.href = "acceuil.html";
         }
     })
     .catch(error => console.error(error));
